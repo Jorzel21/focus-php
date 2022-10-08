@@ -5,8 +5,8 @@ namespace Jorzel\FocusPHP;
 use Illuminate\Support\ServiceProvider;
 use Jorzel\FocusPHP\Facades\FocusPHP;
 
-class FocusServiceProvider extends ServiceProvider
-{
+class FocusPHPServiceProvider extends ServiceProvider
+{   
     /**
      * Register services.
      *
