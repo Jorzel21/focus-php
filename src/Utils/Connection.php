@@ -1,6 +1,6 @@
 <?php
 
-namespace Jorzel\FocusPHP\Utils;
+namespace Jorzel\Focus\Utils;
 
 use Illuminate\Support\Facades\Http;
 

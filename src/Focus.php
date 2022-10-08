@@ -1,8 +1,8 @@
 <?php
 
-namespace Jorzel\FocusPHP;
+namespace Jorzel\Focus;
 
-class FocusPHP
+class Focus
 {
     public function cnae($accessToken)
     {

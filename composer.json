@@ -6,7 +6,7 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Jorzelalves\\FocusPHP\\": "src/"
+            "Jorzelalves\\Focus\\": "src/"
         }
     },
     "authors": [
@@ -23,10 +23,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Jorzel\\FocusPHP\\FocusPHPServiceProvider"
+                "Jorzel\\Focus\\FocusServiceProvider"
             ],
             "aliases": {
-                "FocusPHP": "Jorzel\\FocusPHP\\Facades\\FocusPHP"
+                "Focus": "Jorzel\\Focus\\Facades\\Focus"
             }
         }
     }

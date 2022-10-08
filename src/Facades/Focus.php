@@ -1,10 +1,10 @@
 <?php
 
-namespace Jorzel\FocusPHP\Facades;
+namespace Jorzel\Focus\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
-class FocusPHP extends Facade
+class Focus extends Facade
 {
     /**
      * Get the registered name of the component.
@@ -13,6 +13,6 @@ class FocusPHP extends Facade
      */
     protected static function getFacadeAccessor()
     {
-        return 'focusphp';
+        return 'focus';
     }
 }

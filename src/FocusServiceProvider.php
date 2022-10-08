@@ -1,11 +1,11 @@
 <?php
 
-namespace Jorzel\FocusPHP;
+namespace Jorzel\Focus;
 
 use Illuminate\Support\ServiceProvider;
-use Jorzel\FocusPHP\Facades\FocusPHP;
+use Jorzel\Focus\Facades\Focus;
 
-class FocusPHPServiceProvider extends ServiceProvider
+class FocusServiceProvider extends ServiceProvider
 {   
     /**
      * Register services.
@@ -14,10 +14,10 @@ class FocusPHPServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->mergeConfigFrom(__DIR__.'/config/focusphp.php', 'focusphp');
+        $this->mergeConfigFrom(__DIR__.'/config/focus.php', 'focus');
 
-        $this->app->singleton('focusphp', function ($app) {
-            return new FocusPHP;
+        $this->app->singleton('focus', function ($app) {
+            return new Focus;
         });
     }
 
@@ -29,7 +29,7 @@ class FocusPHPServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->publishes([
-            __DIR__.'/config/focusphp.php' => config_path('focusphp.php'),
+            __DIR__.'/config/focus.php' => config_path('focus.php'),
         ]);
     }
 
@@ -40,6 +40,6 @@ class FocusPHPServiceProvider extends ServiceProvider
      */
     public function provides()
     {
-        return ['focusphp'];
+        return ['focus'];
     }
 }

@@ -1,9 +1,9 @@
 <?php
 
-namespace Jorzel\FocusPHP;
+namespace Jorzel\Focus;
 
-use Jorzel\FocusPHP\Utils\Connection;
-use Jorzel\FocusPHP\Utils\Helpers;
+use Jorzel\Focus\Utils\Connection;
+use Jorzel\Focus\Utils\Helpers;
 
 class CNAE
 {
