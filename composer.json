@@ -1,0 +1,31 @@
+{
+    "name": "jorzelalves/focus-php",
+    "description": "A package to php integration with focusNFe",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Jorzelalves\\FocusPhp\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Jorzel",
+            "email": "jorzelalves@jorzelalves.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^8.0",
+        "ext-json": "*"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Jorzel\\FocusPHP\\FocusPHPServiceProvider"
+            ],
+            "aliases": {
+                "FocusPHP": "Jorzel\\FocusPHP\\Facades\\FocusPHP"
+            }
+        }
+    }
+}
