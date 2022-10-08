@@ -6,7 +6,7 @@
     "license": "MIT",
     "authors": [{
         "name": "Jorzel",
-        "email": "jorzelalves@jorzelalves.com"
+        "email": "jorzelalves@hotmail.com"
     }],
     "minimum-stability": "dev",
     "require": {
@@ -15,7 +15,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Jorzelalves\\Focus\\": "src/"
+            "Jorzel\\Focus\\": "src/"
         }
     },
     "extra": {
