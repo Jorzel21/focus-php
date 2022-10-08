@@ -1,6 +1,8 @@
 {
     "name": "jorzelalves/focus-php",
     "description": "A package to php integration with focusNFe",
+    "keywords": ["focusnfse", "laravel"],
+    "type": "library",
     "license": "MIT",
     "autoload": {
         "psr-4": {
