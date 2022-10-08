@@ -4,21 +4,19 @@
     "keywords": ["focusnfse", "laravel"],
     "type": "library",
     "license": "MIT",
+    "authors": [{
+        "name": "Jorzel",
+        "email": "jorzelalves@jorzelalves.com"
+    }],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=8.0",
+        "ext-json": "*"
+    },
     "autoload": {
         "psr-4": {
             "Jorzelalves\\Focus\\": "src/"
         }
-    },
-    "authors": [
-        {
-            "name": "Jorzel",
-            "email": "jorzelalves@jorzelalves.com"
-        }
-    ],
-    "minimum-stability": "dev",
-    "require": {
-        "php": "^8.0",
-        "ext-json": "*"
     },
     "extra": {
         "laravel": {
