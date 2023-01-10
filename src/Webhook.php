@@ -20,8 +20,23 @@ class Webhook
     {
         $this->http = new Connection($accessToken);
     }
-
-   /*
+    /*
+     * get list of webhook in focusNfse.
+     *
+     * @return array
+     */
+    public function getList()
+    {
+        try {
+            return $this->http->get('/v2/hooks');
+        } catch (\Exception $e) {
+            return [
+                'code' => $e->getCode(),
+                'response' => $e->getMessage()
+            ];
+        }
+    }
+    /*
      * get webhook in focusNfse.
      *
      * @param int $id
@@ -63,7 +78,7 @@ class Webhook
         }
     }
 
-        /*
+    /*
      * destroy webhook in focusNfse.
      *
      * @param int $id
