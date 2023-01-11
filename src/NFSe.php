@@ -95,7 +95,7 @@ class NFSe
         try {
             $this->validateReSendEmailNFSeData($data);
 
-            return $this->http->post('/v2/nfse' . $id . '/email', $data);
+            return $this->http->post('/v2/nfse/' . $id . '/email', $data);
         } catch (\Exception $e) {
             return [
                 'code' => $e->getCode(),
